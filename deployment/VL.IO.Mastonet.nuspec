@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/10/nuspec.xsd">
+  <metadata>
+    <id>VL.IO.Mastonet</id>
+    <version>0.0.1-alpha</version>
+    <title>VL.IO.Mastonet</title>
+    <authors>vvvv</authors>
+    <owners>vvvv</owners>
+    <projectUrl>https://github.com/vvvv/VL.IO.Mastonet</projectUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <summary>Support for the Mastodon API</summary>
+    <description>Support for the Mastodon API</description>
+    <tags>VL, fediverse, mastodon, toot, pixelfed, socialmedia</tags>
+	<dependencies>
+      <dependency id="Mastonet" version="1.8.2" />
+    </dependencies>
+	<icon>icon\nugeticon.png</icon>
+  </metadata>
+  <files>
+    <file src="..\*.vl" target="" exclude="" />
+    <file src="..\help\**" target="help\" exclude="" />
+	<file src="nugeticon.png" target="icon\" />
+  </files>
+</package>
