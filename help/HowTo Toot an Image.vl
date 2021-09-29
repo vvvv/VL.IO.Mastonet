@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Document xmlns:p="property" Id="TrrEFbuWS5oOdCAU0OTvIJ" LanguageVersion="2021.4.0.429" Version="0.128">
+<Document xmlns:p="property" Id="TrrEFbuWS5oOdCAU0OTvIJ" LanguageVersion="2021.4.0.419" Version="0.128">
   <Patch Id="NHg5NVa32adL18Mo9Az8ZW">
     <Canvas Id="MGL9rOTfYRMMapym9ZgI5D" DefaultCategory="Main" CanvasType="FullCategory" />
     <!--
@@ -60,8 +60,7 @@
             <Pin Id="Vv90dpXzbo7OIBrMIqVpnX" Name="Sensitive" Kind="InputPin" />
             <Pin Id="BsWnyCUn0fnLGTptMV5XAU" Name="Spoiler Text" Kind="InputPin" />
             <Pin Id="B1vEBmKp0ryMJCoLgCMAEk" Name="Send" Kind="InputPin" />
-            <Pin Id="I1XYoIm6wcoPDUOeXTHZuh" Name="Status" Kind="OutputPin" />
-            <Pin Id="TZiA1mdJVYdL6qTVKuA0cw" Name="Succeeded" Kind="OutputPin" />
+            <Pin Id="TZiA1mdJVYdL6qTVKuA0cw" Name="On Succeeded" Kind="OutputPin" />
           </Node>
           <Pad Id="D58PyQO6xjBM5OcuyfmVSD" Comment="Send" Bounds="296,656,35,35" ShowValueBox="true" isIOBox="true" Value="False">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
@@ -165,7 +164,6 @@
             <Pin Id="EUi6qGqNkXsPMXWPFAoK4m" Name="Input" Kind="InputPin" />
             <Pin Id="AaBCSH42jNqONWRUixa0Xc" Name="Result" Kind="OutputPin" />
           </Node>
-          <Pad Id="Czrbvy0KnoNOH1ruCPHSXz" Comment="Succeeded" Bounds="253,751,35,35" ShowValueBox="true" isIOBox="true" />
           <Pad Id="JvYWmrnzWYvLMsFp7HwTGw" Comment="" Bounds="685,420,190,132" ShowValueBox="true" isIOBox="true" />
           <Pad Id="UnxCfAWFubMOClCCfEy9hF" Comment="Sensitive" Bounds="208,600,35,35" ShowValueBox="true" isIOBox="true" Value="False">
             <p:TypeAnnotation>
@@ -181,6 +179,7 @@
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
           </Pad>
+          <Pad Id="BQFV36jv5frNW72EX5XxlP" Comment="On Succeeded" Bounds="153,738,35,35" ShowValueBox="true" isIOBox="true" />
         </Canvas>
         <Patch Id="UJ1h48jP9r0M4dQFQ6bJG4" Name="Create" />
         <Patch Id="Syis1a2IIQtNp3QD5SKEOf" Name="Update" />
@@ -199,16 +198,16 @@
         <Link Id="UiZvaB4iModMToiyAgN5NP" Ids="RX6V1fRkmxGO3hdnaum8RH,SyHrvO0HiZkMm4MWGmfqcE" />
         <Link Id="CJhATrFr9UcLezKwY17LW8" Ids="NfgoK0OJIjVPlZC2DhMh2x,C9P3J05q2xYMN7YD7wYXfi" />
         <Link Id="OvjEi739klZLtxUWA40K5s" Ids="AaBCSH42jNqONWRUixa0Xc,J4TTaSmT6kgMkMgmgfNHrt" />
-        <Link Id="Vcv6GZESqfGORnb6MZxGB4" Ids="TZiA1mdJVYdL6qTVKuA0cw,Czrbvy0KnoNOH1ruCPHSXz" />
         <Link Id="KbX6AbhfXmAM25eYLCAINb" Ids="UNeLhMnv5ZlMXET792y3o8,EUi6qGqNkXsPMXWPFAoK4m" />
         <Link Id="BYFWatazMdjOtuxijLcaLr" Ids="UNeLhMnv5ZlMXET792y3o8,JvYWmrnzWYvLMsFp7HwTGw" />
         <Link Id="KaRVsKBjvqvL95YWN70Mt0" Ids="UnxCfAWFubMOClCCfEy9hF,Vv90dpXzbo7OIBrMIqVpnX" />
         <Link Id="HcFnhx0c13hPcJ9Qd5BOjr" Ids="Pmwl7AlceAeMSRzoTUBMKv,BsWnyCUn0fnLGTptMV5XAU" />
+        <Link Id="M23AJPpyjJmNZADNkUemin" Ids="TZiA1mdJVYdL6qTVKuA0cw,BQFV36jv5frNW72EX5XxlP" />
       </Patch>
     </Node>
   </Patch>
-  <NugetDependency Id="ReKkiaX6YtgPDaZ6uNFni3" Location="VL.CoreLib" Version="2021.4.0-0425-gc4df71a466" />
-  <NugetDependency Id="LHoNEkwRutuPiRuNifanIW" Location="VL.Skia" Version="2021.4.0-0425-gc4df71a466" />
-  <NugetDependency Id="G9f67P4SeUlLZAfvly6XH1" Location="VL.IO.OSC_Obsolete" Version="2021.4.0-0425-gc4df71a466" />
+  <NugetDependency Id="ReKkiaX6YtgPDaZ6uNFni3" Location="VL.CoreLib" Version="2021.4.0-0419-g7f7c4a6cb1" />
+  <NugetDependency Id="LHoNEkwRutuPiRuNifanIW" Location="VL.Skia" Version="2021.4.0-0419-g7f7c4a6cb1" />
+  <NugetDependency Id="G9f67P4SeUlLZAfvly6XH1" Location="VL.IO.OSC_Obsolete" Version="2021.4.0-0419-g7f7c4a6cb1" />
   <NugetDependency Id="KGVxdW8l3DULPSX1Sqs8kd" Location="VL.IO.Mastonet" Version="0.0.0.0" />
 </Document>

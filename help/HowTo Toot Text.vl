@@ -1,0 +1,85 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Document xmlns:p="property" Id="RfVI3mZdiMvQUhgjcNm8lp" LanguageVersion="2021.4.0.419" Version="0.128">
+  <Patch Id="NHg5NVa32adL18Mo9Az8ZW">
+    <Canvas Id="MGL9rOTfYRMMapym9ZgI5D" DefaultCategory="Main" CanvasType="FullCategory" />
+    <!--
+
+    ************************ Application ************************
+
+-->
+    <Node Name="Application" Bounds="200,100" Id="Gb8ZgNIVP7FLzsdUyypxLj">
+      <p:NodeReference>
+        <Choice Kind="ContainerDefinition" Name="Process" />
+        <FullNameCategoryReference ID="Primitive" />
+      </p:NodeReference>
+      <Patch Id="FJNXIZefF9eOhNEXybFsT9">
+        <Canvas Id="KulfvpeUKLaL4SitpEEjsX" CanvasType="Group">
+          <Node Bounds="156,231,33,19" Id="Sj6Th6NmH59L84GaRg3kWm">
+            <p:NodeReference LastCategoryFullName="IO.Mastodon" LastSymbolSource="VL.IO.Mastodon.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <Choice Kind="ProcessAppFlag" Name="MastodonClient" />
+            </p:NodeReference>
+            <Pin Id="Pc08Sko23CaPgswMFSA4Ik" Name="Instance" Kind="InputPin" />
+            <Pin Id="RJyTGuFJt2xNFOTA1Rl4gi" Name="Access Token" Kind="InputPin" />
+            <Pin Id="ELVFWZhPyAPQFVagwWlroL" Name="Output" Kind="OutputPin" />
+            <Pin Id="Aswz6vRRG36Lp5JtygbHG3" Name="Is Connected" Kind="OutputPin" />
+          </Node>
+          <Pad Id="KrM0Qu0LI92NrhTbBTUQOa" Comment="Instance" Bounds="158,169,81,15" ShowValueBox="true" isIOBox="true" Value="">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+          </Pad>
+          <Node Bounds="156,391,45,19" Id="Rhx4yADvEUvL7S1G6ucYaG">
+            <p:NodeReference LastCategoryFullName="IO.Mastodon" LastSymbolSource="VL.IO.Mastodon.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <Choice Kind="ProcessAppFlag" Name="Toot" />
+            </p:NodeReference>
+            <Pin Id="SyHrvO0HiZkMm4MWGmfqcE" Name="Input" Kind="InputPin" />
+            <Pin Id="OQhYxZjD0VrLu1sPv4uupV" Name="Text" Kind="InputPin" />
+            <Pin Id="CiTaEAE57xJQOiG8y13gvn" Name="Sensitive" Kind="InputPin" />
+            <Pin Id="VJLx48QuVSLOp3Pjbb8Ehy" Name="Spoiler Text" Kind="InputPin" />
+            <Pin Id="B1vEBmKp0ryMJCoLgCMAEk" Name="Send" Kind="InputPin" />
+            <Pin Id="GwX5NCkTSsqNRj4oK7ZqwE" Name="On Succeeded" Kind="OutputPin" />
+          </Node>
+          <Pad Id="D58PyQO6xjBM5OcuyfmVSD" Comment="Send" Bounds="343,346,35,35" ShowValueBox="true" isIOBox="true" Value="False">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+              <Choice Kind="TypeFlag" Name="Boolean" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:buttonmode p:Assembly="VL.UI.Forms" p:Type="VL.HDE.PatchEditor.Editors.ButtonModeEnum">Bang</p:buttonmode>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="RgSkXuVGQkyLdpu3FH8Wdy" Comment="Text" Bounds="178,358,105,15" ShowValueBox="true" isIOBox="true" Value="cannot be empty">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+          </Pad>
+          <Pad Id="U9xpqxVhqrRMpQzcHte4J0" Comment="On Succeeded" Bounds="158,440,35,35" ShowValueBox="true" isIOBox="true" />
+          <Pad Id="M3IJ0et7pUSLi9zdc5nvDa" Comment="Is Connected" Bounds="240,274,35,35" ShowValueBox="true" isIOBox="true" />
+          <Pad Id="H0OwJKMY0auLKiCDuuHlw0" Comment="Access Token" Bounds="240,208,35,15" ShowValueBox="true" isIOBox="true" Value="">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+          </Pad>
+        </Canvas>
+        <Patch Id="UJ1h48jP9r0M4dQFQ6bJG4" Name="Create" />
+        <Patch Id="Syis1a2IIQtNp3QD5SKEOf" Name="Update" />
+        <ProcessDefinition Id="Bkzezb3u9MJQONzJlFYIgr">
+          <Fragment Id="NFoawUI9j4OO4ikJmSynva" Patch="UJ1h48jP9r0M4dQFQ6bJG4" Enabled="true" />
+          <Fragment Id="HIW62pywGyZPZ5mIzbZU1b" Patch="Syis1a2IIQtNp3QD5SKEOf" Enabled="true" />
+        </ProcessDefinition>
+        <Link Id="HQIgqr8HNmwOGkuN0rCbKh" Ids="KrM0Qu0LI92NrhTbBTUQOa,Pc08Sko23CaPgswMFSA4Ik" />
+        <Link Id="GC3hYbdSBcUQDAaHkIx4B5" Ids="D58PyQO6xjBM5OcuyfmVSD,B1vEBmKp0ryMJCoLgCMAEk" />
+        <Link Id="D8Wuvbb5M07M66P3yblQ36" Ids="RgSkXuVGQkyLdpu3FH8Wdy,OQhYxZjD0VrLu1sPv4uupV" />
+        <Link Id="QbGVz5eMYiNP0gN5K2oF9C" Ids="GwX5NCkTSsqNRj4oK7ZqwE,U9xpqxVhqrRMpQzcHte4J0" />
+        <Link Id="Co8w803p0keOnnpOPLI6eQ" Ids="ELVFWZhPyAPQFVagwWlroL,SyHrvO0HiZkMm4MWGmfqcE" />
+        <Link Id="Mb5BwnW0HTrMZiOHjKvaGO" Ids="Aswz6vRRG36Lp5JtygbHG3,M3IJ0et7pUSLi9zdc5nvDa" />
+        <Link Id="J8Bp1HOOCgpO9TuOwLUSMb" Ids="H0OwJKMY0auLKiCDuuHlw0,RJyTGuFJt2xNFOTA1Rl4gi" />
+      </Patch>
+    </Node>
+  </Patch>
+  <NugetDependency Id="ReKkiaX6YtgPDaZ6uNFni3" Location="VL.CoreLib" Version="2021.4.0-0419-g7f7c4a6cb1" />
+  <NugetDependency Id="LHoNEkwRutuPiRuNifanIW" Location="VL.Skia" Version="2021.4.0-0419-g7f7c4a6cb1" />
+  <NugetDependency Id="G9f67P4SeUlLZAfvly6XH1" Location="VL.IO.OSC_Obsolete" Version="2021.4.0-0419-g7f7c4a6cb1" />
+  <NugetDependency Id="GOfyXQaCDo4OZlZUhmxEA2" Location="VL.IO.Mastonet" Version="0.0.0.0" />
+</Document>
