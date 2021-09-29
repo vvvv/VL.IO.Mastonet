@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<Pack>
+	<Topic title="Overview">
+		<UriItem title="Join Mastodon" link="https://joinmastodon.org/" mediaType="text"/>
+		<UriItem title="Join Pixelfed" link="https://fedidb.org/software/pixelfed" mediaType="text"/>
+		
+		<VLDocument link="HowTo Display the hashtag timeline of a fediverse instance.vl" tags="mastodon pixelfed"/>
+		<VLDocument link="HowTo Receive the public stream of a fediverse instance.vl" tags="mastodon pixelfed"/>
+		<VLDocument link="HowTo Toot an image.vl" tags="mastodon pixelfed"/>
+		<VLDocument link="HowTo Toot text.vl" tags="mastodon pixelfed"/>
+	</Topic>
+</Pack>

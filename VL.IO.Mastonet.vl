@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Document xmlns:p="property" Id="BkoIMTVi1GgQNs8aUFNbPL" LanguageVersion="2021.4.0.419" Version="0.128">
+<Document xmlns:p="property" Id="BkoIMTVi1GgQNs8aUFNbPL" LanguageVersion="2021.3.3.131" Version="0.128">
   <Patch Id="AqQcV8Vh5WHMxZzJPG6il3">
     <Canvas Id="UVYcNwVxlXdNfuQcd45kZR" DefaultCategory="IO.MastodonAPI" CanvasType="FullCategory">
       <!--
@@ -952,7 +952,7 @@
             <ControlPoint Id="RySTg5VPwWAM3Dvk49UDRW" Bounds="678,524" />
             <ControlPoint Id="NbbOsmRg0ArLJxxhGTmxef" Bounds="674,160" />
             <Node Bounds="409,191,270,301" Id="K68KDIQspVpOwcmMI3PKFj">
-              <p:NodeReference LastCategoryFullName="IO.Mastodon" LastSymbolSource="VL.IO.Mastodon.vl">
+              <p:NodeReference LastCategoryFullName="IO.MastodonAPI" LastSymbolSource="VL.IO.Mastonet.vl">
                 <Choice Kind="ProcessAppFlag" Name="Streaming" />
                 <Choice Kind="RegionFlag" Name="Region (Stateless)" Fixed="true" />
               </p:NodeReference>
@@ -1202,7 +1202,7 @@
             <ControlPoint Id="HerxsQDG19xOkhpCMuik6f" Bounds="394,168" />
             <ControlPoint Id="C8d5oD9G0kBNl9DOylvRpp" Bounds="691,152" />
             <Node Bounds="469,218,93,19" Id="NCr0FQlHO0dLqO46kjXEWA">
-              <p:NodeReference LastCategoryFullName="IO.MastodonAPI" LastSymbolSource="VL.IO.Mastodon.vl">
+              <p:NodeReference LastCategoryFullName="IO.MastodonAPI" LastSymbolSource="VL.IO.Mastonet.vl">
                 <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                 <Choice Kind="ProcessAppFlag" Name="UploadImage" />
               </p:NodeReference>
@@ -1915,7 +1915,7 @@
             <ControlPoint Id="UK1xJErzrmRNTYGZebodF9" Bounds="590,392" />
             <ControlPoint Id="EmFdlK5OcubONnQhSCHlTd" Bounds="535,152" />
             <Node Bounds="418,194,123,149" Id="VsKI6qlX7zkNIbLR6UX4Fl">
-              <p:NodeReference LastCategoryFullName="IO.Mastodon" LastSymbolSource="VL.IO.Mastodon.vl">
+              <p:NodeReference LastCategoryFullName="IO.MastodonAPI" LastSymbolSource="VL.IO.Mastonet.vl">
                 <Choice Kind="ProcessAppFlag" Name="Streaming" />
                 <Choice Kind="RegionFlag" Name="Region (Stateless)" Fixed="true" />
               </p:NodeReference>
@@ -2456,8 +2456,16 @@
                         <PinReference Kind="InputPin" Name="Value" />
                       </p:NodeReference>
                       <Pin Id="EwaFvviM3JcMDsykw58C58" Name="Input" Kind="StateInputPin" />
-                      <Pin Id="FThESn4zOjOM35vZdQr7Gu" Name="Name" Kind="InputPin" DefaultValue="User-Agent" />
-                      <Pin Id="OeM9as6YrmCOwNzxiQ9cBQ" Name="Value" Kind="InputPin" DefaultValue="vvvv app" />
+                      <Pin Id="FThESn4zOjOM35vZdQr7Gu" Name="Name" Kind="InputPin" DefaultValue="User-Agent">
+                        <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+                          <Choice Kind="TypeFlag" Name="String" />
+                        </p:TypeAnnotation>
+                      </Pin>
+                      <Pin Id="OeM9as6YrmCOwNzxiQ9cBQ" Name="Value" Kind="InputPin" DefaultValue="vvvv">
+                        <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+                          <Choice Kind="TypeFlag" Name="String" />
+                        </p:TypeAnnotation>
+                      </Pin>
                       <Pin Id="A5Adgd7Vp0hMkatwE1WHDv" Name="Output" Kind="StateOutputPin" />
                     </Node>
                   </Patch>
@@ -2557,7 +2565,7 @@
             <ControlPoint Id="NgYiGdH22cIQd8fl5H8PB1" Bounds="678,524" />
             <ControlPoint Id="Tk41hyj4YEGPWeDUDHdXDY" Bounds="674,160" />
             <Node Bounds="409,191,270,301" Id="U6C3UwDzFVBPQAHnfGbPCd">
-              <p:NodeReference LastCategoryFullName="IO.Mastodon" LastSymbolSource="VL.IO.Mastodon.vl">
+              <p:NodeReference LastCategoryFullName="IO.MastodonAPI" LastSymbolSource="VL.IO.Mastonet.vl">
                 <Choice Kind="ProcessAppFlag" Name="Streaming" />
                 <Choice Kind="RegionFlag" Name="Region (Stateless)" Fixed="true" />
               </p:NodeReference>
@@ -3305,7 +3313,7 @@
                   <ControlPoint Id="QWhh13R5QcVLj6ymR63yGF" Bounds="337,454" />
                   <ControlPoint Id="MGlgzntTEAgQWBk60yWIM0" Bounds="427,456" />
                   <Node Bounds="339,356,98,13" Id="HQqh1oamlGIOfMggeqLU5j">
-                    <p:NodeReference>
+                    <p:NodeReference LastCategoryFullName="IO.MastodonAPI" LastSymbolSource="VL.IO.Mastonet.vl">
                       <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                       <Choice Kind="ProcessAppFlag" Name="MastodonClient2" />
                       <PinReference Kind="InputPin" Name="Application Name" />
@@ -3419,10 +3427,10 @@
       </Patch>
     </Node>
   </Patch>
-  <NugetDependency Id="IwDckeiuTY5M93ojI2gd9c" Location="VL.CoreLib" Version="2021.4.0-0419-g7f7c4a6cb1" />
+  <NugetDependency Id="IwDckeiuTY5M93ojI2gd9c" Location="VL.CoreLib" Version="2021.3.3" />
   <PlatformDependency Id="IxKJkmkugAxLxXJrAfhMD6" Location="System.Windows.Forms" />
   <PlatformDependency Id="D8aK4sgwn4gPwyx2EGUY6N" Location="System.Drawing" />
-  <NugetDependency Id="QpRdgq4VgfpPPVybJWQgju" Location="VL.Skia" Version="2021.4.0-0419-g7f7c4a6cb1" />
+  <NugetDependency Id="QpRdgq4VgfpPPVybJWQgju" Location="VL.Skia" Version="2021.3.3" />
   <PlatformDependency Id="SmxxndIq8WsOxLRqkye2KH" Location="System.IO" />
   <PlatformDependency Id="L1mjzRuooo7Ld2WE8qr69y" Location="System.Net.Http" />
   <PlatformDependency Id="CGaFvt4sHFuOrvCVcOizzk" Location="../../Mastonet/Mastonet/bin/Debug/netstandard2.0/Mastonet.dll" />
