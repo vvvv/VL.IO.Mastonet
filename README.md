@@ -1,5 +1,6 @@
 # VL.IO.Mastonet
-The [Mastodon](https://joinmastodon.org/) API v1 for VL. Also works with [pixelfed](https://pixelfed.org/).
+The [Mastodon](https://joinmastodon.org/) API v1 for VL. Also works with [Pixelfed](https://pixelfed.org/).  
+Based on the excellent [Mastonet](https://github.com/glacasa/Mastonet) library.
 
 Try it with vvvv, the visual live-programming environment for .NET  
 Download: http://visualprogramming.net
