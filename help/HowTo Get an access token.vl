@@ -1,0 +1,104 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Document xmlns:p="property" Id="T1UPiXPzIj8Mkww2Dcp65y" LanguageVersion="2021.4.0.419" Version="0.128">
+  <NugetDependency Id="CMZoMp3KcUENACJFjwGuNU" Location="VL.CoreLib" Version="2021.4.0-0419-g7f7c4a6cb1" />
+  <Patch Id="RxHJ1CguIhfNnulujIp4VW">
+    <Canvas Id="RgbJq7DRb8HMnkn9Bg2GDO" DefaultCategory="Main" BordersChecked="false" CanvasType="FullCategory" />
+    <!--
+
+    ************************ Application ************************
+
+-->
+    <Node Name="Application" Bounds="100,100" Id="J3hvOmplJe0Nof2pBtg2fk">
+      <p:NodeReference>
+        <Choice Kind="ContainerDefinition" Name="Process" />
+        <FullNameCategoryReference ID="Primitive" />
+      </p:NodeReference>
+      <Patch Id="FSsF6JeLRbNMLXn359DGpS">
+        <Canvas Id="FZ3rzvir1JXN1FAIF7mt2u" CanvasType="Group">
+          <Node Bounds="96,284,87,19" Id="NiAzRjx7sc0NBED6167BhM">
+            <p:NodeReference LastCategoryFullName="IO.MastodonAPI" LastSymbolSource="VL.IO.Mastonet.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <Choice Kind="ProcessAppFlag" Name="MastodonClient" />
+            </p:NodeReference>
+            <Pin Id="U4HjxmLmg7CLhjFfYdhghW" Name="Instance" Kind="InputPin" />
+            <Pin Id="Kbj24S3nRpiQcsm0e7lJE0" Name="Access Token" Kind="InputPin" />
+            <Pin Id="PL7SsiTzYz2LnBjXBlyaSA" Name="Output" Kind="OutputPin" />
+            <Pin Id="RjkFkphAeFlL9wxfmPu40e" Name="Is Connected" Kind="OutputPin" />
+          </Node>
+          <Pad Id="RlmaNIUlKDIMI5CBCLrbG0" Comment="Instance" Bounds="98,169,35,15" ShowValueBox="true" isIOBox="true" Value="">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+          </Pad>
+          <Pad Id="KhWH4TrZUUcLl7vHayFPXl" Comment="Access Token" Bounds="180,251,35,15" ShowValueBox="true" isIOBox="true" Value="">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+          </Pad>
+          <Pad Id="SOj9Ubfj2auPUsfZxNG3xz" Bounds="399,117,94,25" ShowValueBox="true" isIOBox="true" Value="Mastodon ">
+            <p:TypeAnnotation>
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">12</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="EPQVPdewGuPLUk6prfVu6e" Bounds="399,150,332,160" ShowValueBox="true" isIOBox="true" Value="- Go to Settings -&gt; Development&#xD;&#xA;- Click &quot;New Application&quot;&#xD;&#xA;- Give it a name&#xD;&#xA;- Define a scope: ie. what you're allowed to do with the access token (read, write,..)&#xD;&#xA;- Press &quot;Submit&quot;&#xD;&#xA;- Select the newly created application&#xD;&#xA;- Copy the string next to &quot;Your access token&quot;">
+            <p:TypeAnnotation>
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="LHyWRBApzGvQT3Zhh2LVG6" Bounds="399,331,94,25" ShowValueBox="true" isIOBox="true" Value="Pixelfed">
+            <p:TypeAnnotation>
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">12</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="UscMs6XdfSuOGZCmnKb9kM" Bounds="399,364,332,160" ShowValueBox="true" isIOBox="true" Value="- Go to Settings -&gt; Applications&#xD;&#xA;- Click &quot;Create New Token&quot;&#xD;&#xA;- Give it a name&#xD;&#xA;- Define a scope: ie. what you're allowed to do with the access token (read, write,..)&#xD;&#xA;- Press &quot;Create&quot;&#xD;&#xA;- Copy the given string">
+            <p:TypeAnnotation>
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="GAKqGgd5rldNohGePfwm7Y" Comment="Is Connected" Bounds="180,328,35,35" ShowValueBox="true" isIOBox="true" />
+          <Pad Id="L73oDFytd98PPMeAV50SzI" Bounds="190,165,169,63" ShowValueBox="true" isIOBox="true" Value="&lt; in the form of e.g:&#xD;&#xA;mastodon.social&#xD;&#xA;(ie, without the http)">
+            <p:TypeAnnotation>
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+        </Canvas>
+        <Patch Id="FYVRhyTK41tLX0TyO4pNj2" Name="Create" />
+        <Patch Id="F87vmVwrXL5MNGKKKYNd5H" Name="Update" />
+        <!--
+
+    ************************  ************************
+
+-->
+        <ProcessDefinition Id="DAOoUQJ4KiTPC3k0MWYLhI">
+          <Fragment Id="P5X7CRabhEiNYwUqnuuMb6" Patch="FYVRhyTK41tLX0TyO4pNj2" Enabled="true" />
+          <Fragment Id="TMfIDewhhgTNmPkjorfmWr" Patch="F87vmVwrXL5MNGKKKYNd5H" Enabled="true" />
+        </ProcessDefinition>
+        <Link Id="IDI5avwRK75OIET2djS3os" Ids="RlmaNIUlKDIMI5CBCLrbG0,U4HjxmLmg7CLhjFfYdhghW" />
+        <Link Id="Gq0Ob1G78PROMNJ62U7vHa" Ids="KhWH4TrZUUcLl7vHayFPXl,Kbj24S3nRpiQcsm0e7lJE0" />
+        <Link Id="OALBveYWCMON5CMhEpn031" Ids="RjkFkphAeFlL9wxfmPu40e,GAKqGgd5rldNohGePfwm7Y" />
+      </Patch>
+    </Node>
+  </Patch>
+  <NugetDependency Id="TnM1EVsNdGiLx3ehebwrrX" Location="VL.CoreLib" Version="2021.4.0-0419-g7f7c4a6cb1" />
+  <NugetDependency Id="GsnU3f9w2qRNYtLR4V7Knj" Location="VL.IO.Mastonet" Version="0.0.0.0" />
+</Document>
