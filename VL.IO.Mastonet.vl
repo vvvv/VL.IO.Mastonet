@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Document xmlns:p="property" Id="BkoIMTVi1GgQNs8aUFNbPL" LanguageVersion="2021.3.3.131" Version="0.128">
+<Document xmlns:p="property" Id="BkoIMTVi1GgQNs8aUFNbPL" LanguageVersion="2021.4.0.460" Version="0.128">
   <Patch Id="AqQcV8Vh5WHMxZzJPG6il3">
     <Canvas Id="UVYcNwVxlXdNfuQcd45kZR" DefaultCategory="IO.MastodonAPI" CanvasType="FullCategory">
       <!--
@@ -1206,7 +1206,7 @@
                 <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                 <Choice Kind="ProcessAppFlag" Name="UploadImage" />
               </p:NodeReference>
-              <Pin Id="VylBsooYtaFQAajD4tXqbH" Name="File Name" Kind="InputPin" />
+              <Pin Id="VylBsooYtaFQAajD4tXqbH" Name="File Name" Kind="InputPin" DefaultValue="file.png" />
               <Pin Id="KOo1soW5Al3OAOIcQYA6DU" Name="Upload" Kind="InputPin" />
               <Pin Id="RqanXgYSIxSOvzRSnXJ1H1" Name="Image" Kind="InputPin" />
               <Pin Id="IZlwnPjX6pYLxaH3N7KV7R" Name="Input" Kind="InputPin" />
@@ -1432,7 +1432,7 @@
           </Canvas>
           <Patch Id="I5BdBVU05r8MRN57SzjMD6" Name="Create" />
           <Patch Id="EuUkPHe3vSmQBvZ5I9cd3L" Name="Update" ManuallySortedPins="true">
-            <Pin Id="MWX8LaSLJgeOZYEaDQyDPe" Name="File Name" Kind="InputPin" Bounds="762,197" DefaultValue="file.png" />
+            <Pin Id="MWX8LaSLJgeOZYEaDQyDPe" Name="File Name" Kind="InputPin" Bounds="762,197" />
             <Pin Id="KmJ0gQDuk5sNqiYZkLgBK0" Name="Upload" Kind="InputPin" Bounds="470,43" DefaultValue="False">
               <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
                 <Choice Kind="TypeFlag" Name="Boolean" />
@@ -1454,7 +1454,6 @@
           <Link Id="NBrUmwjtenYL9OjXF9TDCm" Ids="BbqzWci1Vg1OKq44ca2B5V,RPeMoMubOjUPvaX3pUy63V" IsHidden="true" />
           <Link Id="QoUbsfU39ExNO9dpo1DoKw" Ids="Josqi0P1qR5LojPU6jDlTa,GeRUJ1XfySIL5mgGrQvbEk" IsHidden="true" />
           <Link Id="H8I8z3K7PmvN7SixUwFWq6" Ids="BaiODUyyXhdMgYqv0Us7lg,MptHFtWTvTNMwPrR5v9GB6" />
-          <Link Id="FEBBPDqq5ZkONI5lyJ6dev" Ids="EZqKoryhKzQLPHfMNOqrvJ,QWVicnmXP63MNpJzF0yX8F" />
           <Link Id="LMYOjef8ZP0LfX5woCXQ9w" Ids="JuFt3Oi5egxMndLLd5qk1g,HnnGQ7DPuJONacFZVyrvgn" />
           <Link Id="H18ai9kTvlTOOwE2lagput" Ids="JR5pfvItX3ePzwJrzVe834,INJj8SNSyUkMYgDaLMHRIY" />
           <Link Id="GtkOuEPv0xdNWBCzZQ0eie" Ids="CksJmoCF0a1K9sprafJ6pC,BkFjyL43Xa8OROcVPnv48t" />
@@ -1472,6 +1471,7 @@
           <Link Id="JKqDhftbM6wPDSxjOxisZD" Ids="L9tXsAaetN8NuCxsdjBqIy,GFdfKeMtgyMPbTg42eN8KL" />
           <Link Id="RIIzNn7lpFKNj883HTCMRF" Ids="FO5TAbkueL2Pm5SnXV31aG,JIVWhp2iPvyLOpe40dT8aH" />
           <Link Id="LiXd1G9LH8wPTwlLDRgyHs" Ids="JuFt3Oi5egxMndLLd5qk1g,LzXfI2n3heKOWQrnN2MvCL" />
+          <Link Id="Qn3LDHIUH9nOPky3TTrNHU" Ids="EZqKoryhKzQLPHfMNOqrvJ,QWVicnmXP63MNpJzF0yX8F" />
         </Patch>
       </Node>
       <!--
@@ -2468,6 +2468,26 @@
                       </Pin>
                       <Pin Id="A5Adgd7Vp0hMkatwE1WHDv" Name="Output" Kind="StateOutputPin" />
                     </Node>
+                    <Node Bounds="514,534,61,26" Id="LfCFQsgP90zPHOMd89ohWg">
+                      <p:NodeReference LastCategoryFullName="System.Net.Http.Headers.HttpHeaders" LastSymbolSource="System.Net.Http.dll">
+                        <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                        <CategoryReference Kind="AssemblyCategory" Name="HttpHeaders" />
+                        <Choice Kind="OperationCallFlag" Name="Add" />
+                        <PinReference Kind="InputPin" Name="Value" />
+                      </p:NodeReference>
+                      <Pin Id="RW66Ap0HvsBPldYXtVj0zb" Name="Input" Kind="StateInputPin" />
+                      <Pin Id="KbcJOZ54pk5NxV5CIrNyrr" Name="Name" Kind="InputPin" DefaultValue="Accept">
+                        <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+                          <Choice Kind="TypeFlag" Name="String" />
+                        </p:TypeAnnotation>
+                      </Pin>
+                      <Pin Id="KmdbKJp7c2qOs2134mEtMb" Name="Value" Kind="InputPin" DefaultValue="image/*">
+                        <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+                          <Choice Kind="TypeFlag" Name="String" />
+                        </p:TypeAnnotation>
+                      </Pin>
+                      <Pin Id="SoKWOvt9gRiNPdQxbURdis" Name="Output" Kind="StateOutputPin" />
+                    </Node>
                   </Patch>
                 </Node>
                 <Node Bounds="259,179,39,19" Id="E9iCepzvAdwPLEiKHbksGE">
@@ -2516,7 +2536,7 @@
           <Link Id="O1NzxAeaJFlQVuLXFooJUd" Ids="U5VvC5rXqscOX0RjIwhlFJ,S77qH9LiKaNOMZOU4aNKrY" IsHidden="true" />
           <Patch Id="RR0OFIwLoDDOVAo3bPvKNd" Name="Create" />
           <Patch Id="LGT22ibZt7mPlvaT7AYkxT" Name="Update">
-            <Pin Id="Cs9OycNsOfkQRTsz7pX0Um" Name="Instance" Kind="InputPin" DefaultValue="mastodon.social" Summary="In the form of e.g: mastodon.social" />
+            <Pin Id="Cs9OycNsOfkQRTsz7pX0Um" Name="Instance" Kind="InputPin" Summary="In the form of e.g: mastodon.social" />
             <Pin Id="U5VvC5rXqscOX0RjIwhlFJ" Name="Access Token" Kind="InputPin" Summary="Create one from the Developer settings when you're logged in to your account" />
             <Pin Id="O0pRJAB2DMwNCAswGqXwlo" Name="Output" Kind="OutputPin" Bounds="239,860" />
             <Pin Id="Dg5MxfPjTcBOY3lHCD8ll8" Name="Is Connected" Kind="OutputPin" Bounds="70,927" />
@@ -2545,6 +2565,7 @@
           <Link Id="DhL1L6gkbtYNmaghCLbYS2" Ids="QC0ncMA2MoUOQtVu4SXu5M,B1y85by2pFhMR1BiNKpYVd" />
           <Link Id="VcKZA2MGT0VQOlTLKR09se" Ids="Vvd0VcjnNmoNQ9GUjhgpHu,EwaFvviM3JcMDsykw58C58" />
           <Link Id="S8Lk7BN5V7ELPLmxN9yoHq" Ids="MCrkU5JIaC0LSSbR6vxXxu,LCS9rj1r24PNoi9HLfquDb" />
+          <Link Id="EfbbRDhslG1Qct5auWLJMe" Ids="A5Adgd7Vp0hMkatwE1WHDv,RW66Ap0HvsBPldYXtVj0zb" />
         </Patch>
       </Node>
       <!--
@@ -3427,11 +3448,11 @@
       </Patch>
     </Node>
   </Patch>
-  <NugetDependency Id="IwDckeiuTY5M93ojI2gd9c" Location="VL.CoreLib" Version="2021.3.3" />
+  <NugetDependency Id="IwDckeiuTY5M93ojI2gd9c" Location="VL.CoreLib" Version="2021.4.0-0454-g78e865b66f" />
   <PlatformDependency Id="IxKJkmkugAxLxXJrAfhMD6" Location="System.Windows.Forms" />
   <PlatformDependency Id="D8aK4sgwn4gPwyx2EGUY6N" Location="System.Drawing" />
-  <NugetDependency Id="QpRdgq4VgfpPPVybJWQgju" Location="VL.Skia" Version="2021.3.3" />
+  <NugetDependency Id="QpRdgq4VgfpPPVybJWQgju" Location="VL.Skia" Version="2021.4.0-0454-g78e865b66f" />
   <PlatformDependency Id="SmxxndIq8WsOxLRqkye2KH" Location="System.IO" />
   <PlatformDependency Id="L1mjzRuooo7Ld2WE8qr69y" Location="System.Net.Http" />
-  <PlatformDependency Id="CGaFvt4sHFuOrvCVcOizzk" Location="../../Mastonet/Mastonet/bin/Debug/netstandard2.0/Mastonet.dll" />
+  <NugetDependency Id="AEwGRI37HNsM2lifUBZMtp" Location="Mastonet" Version="1.8.2" />
 </Document>
