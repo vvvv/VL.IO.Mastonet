@@ -9,7 +9,7 @@
 	<Topic title="Getting started">
 		<VLDocument link="HowTo Receive the public stream of a fediverse instance.vl" tags="mastodon pixelfed"/>
 		<VLDocument link="HowTo Display the hashtag timeline of a fediverse instance.vl" tags="mastodon pixelfed"/>
-		<VLDocument link="HowTo Toot an image.vl" tags="mastodon pixelfed"/>
-		<VLDocument link="HowTo Toot text.vl" tags="mastodon pixelfed"/>
+		<VLDocument link="HowTo Toot an Image.vl" tags="mastodon pixelfed"/>
+		<VLDocument link="HowTo Toot Text.vl" tags="mastodon pixelfed"/>
 	</Topic>
 </Pack>
