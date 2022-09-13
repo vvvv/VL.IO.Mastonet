@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Document xmlns:p="property" Id="RfVI3mZdiMvQUhgjcNm8lp" LanguageVersion="2021.3.3.131" Version="0.128">
+<Document xmlns:p="property" Id="RfVI3mZdiMvQUhgjcNm8lp" LanguageVersion="2021.4.10.1043" Version="0.128">
   <Patch Id="NHg5NVa32adL18Mo9Az8ZW">
     <Canvas Id="MGL9rOTfYRMMapym9ZgI5D" DefaultCategory="Main" CanvasType="FullCategory" />
     <!--
@@ -22,7 +22,9 @@
             <Pin Id="Pc08Sko23CaPgswMFSA4Ik" Name="Instance" Kind="InputPin" />
             <Pin Id="NZc4cQlen7IPdVCH91VIQL" Name="Access Token" Kind="InputPin" />
             <Pin Id="Vzqfom5V3PhOLyVmB4H6Iv" Name="Output" Kind="OutputPin" />
-            <Pin Id="BoObhe3zdQWPAjQSshWPsc" Name="Is Connected" Kind="OutputPin" />
+            <Pin Id="DlmMJheJEKTO9HsFeKoUSa" Name="Valid" Kind="OutputPin" />
+            <Pin Id="M8R6WEwZWkDM1ehs6oRUSk" Name="Error Message" Kind="OutputPin" />
+            <Pin Id="IB71wmxAkDnMsQ65FjihNm" Name="On Data" Kind="OutputPin" />
           </Node>
           <Pad Id="KrM0Qu0LI92NrhTbBTUQOa" Comment="Instance" Bounds="193,98,79,15" ShowValueBox="true" isIOBox="true" Value="">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
@@ -242,17 +244,17 @@
                 <Fragment Id="RiPWYi9NKgxLUyKLWFIi6g" Patch="Ozd8nTKYzdvMnzQmr85Aoy" Enabled="true" />
               </ProcessDefinition>
               <Slot Id="RctHYmnVSzkM7dW0rNqLte" Name="UserName">
-                <p:TypeAnnotation>
+                <p:TypeAnnotation p:Type="TypeReference">
                   <Choice Kind="TypeFlag" Name="String" />
                 </p:TypeAnnotation>
               </Slot>
               <Slot Id="NWzjFcgY5cWN1K2H4vzWV9" Name="Content">
-                <p:TypeAnnotation>
+                <p:TypeAnnotation p:Type="TypeReference">
                   <Choice Kind="TypeFlag" Name="String" />
                 </p:TypeAnnotation>
               </Slot>
               <Slot Id="FvcRD7pIxmgPfyNQbNiFUz" Name="Image">
-                <p:TypeAnnotation>
+                <p:TypeAnnotation p:Type="TypeReference">
                   <Choice Kind="TypeFlag" Name="SKImage" />
                 </p:TypeAnnotation>
               </Slot>
@@ -281,7 +283,6 @@
             </Patch>
           </Node>
           <Pad Id="ThXZXJjqNAWLkXZdnqaG3i" Comment="On Data" Bounds="257,1013,35,35" ShowValueBox="true" isIOBox="true" />
-          <Pad Id="GXd4Qmh6NCeOxRG9KgBZuN" Comment="Is Connected" Bounds="286,183,35,35" ShowValueBox="true" isIOBox="true" />
           <Node Bounds="197,1123,52,26" Id="J2NyWU3Yct6NglJ8SlHgzk">
             <p:NodeReference LastCategoryFullName="Collections.Spread" LastSymbolSource="VL.Collections.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
@@ -414,7 +415,6 @@
         <Link Id="US8HffpXdGqPJmK9spnUy4" Ids="FOaxT0hhVdsMQIdkaIFyId,CQd6f4PA5C8P6yc1nj9ixQ" />
         <Link Id="Dz1ATycDD2GNqdMpAVaHNu" Ids="AVWxMkKkBoXLLDo7dlfL3e,PdX6cpLesQeMQ9RO4LPUzl" />
         <Link Id="SzNtdazMvJNODFd5r0AVr0" Ids="Vzqfom5V3PhOLyVmB4H6Iv,VFoXPrhNJbWP3Foy5K5F7A" />
-        <Link Id="TdqRO8prVZyLZ9nE2UrxsM" Ids="BoObhe3zdQWPAjQSshWPsc,GXd4Qmh6NCeOxRG9KgBZuN" />
         <Link Id="HFNXT8WW4cqPQ9t18QQe8y" Ids="Dv5bDaTQT68QFUvwHGiiGM,OSA8AkQNLxrMQkP3rSLyzq" />
         <Link Id="M6GSpoLeQY4MCb6cCdTPAM" Ids="NvPksXQwsUfPCopl54UtYY,U81ad2GL7LjO0xvVVfFqKn" />
         <Link Id="KnfzVVa4uGWQD3oA1i2fkq" Ids="EdWTA4aMedOP2f4JZ8Tp97,UWhgXlCxKzLLL7Il6whvUt" />
@@ -426,7 +426,7 @@
       </Patch>
     </Node>
   </Patch>
-  <NugetDependency Id="ReKkiaX6YtgPDaZ6uNFni3" Location="VL.CoreLib" Version="2021.3.3" />
-  <NugetDependency Id="LHoNEkwRutuPiRuNifanIW" Location="VL.Skia" Version="2021.3.3" />
+  <NugetDependency Id="ReKkiaX6YtgPDaZ6uNFni3" Location="VL.CoreLib" Version="2021.4.10" />
+  <NugetDependency Id="LHoNEkwRutuPiRuNifanIW" Location="VL.Skia" Version="2021.4.10" />
   <NugetDependency Id="NCoskPamUSOLXeC4tTynLs" Location="VL.IO.Mastonet" Version="0.0.0.0" />
 </Document>

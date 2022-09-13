@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Document xmlns:p="property" Id="T1UPiXPzIj8Mkww2Dcp65y" LanguageVersion="2021.4.0.419" Version="0.128">
-  <NugetDependency Id="CMZoMp3KcUENACJFjwGuNU" Location="VL.CoreLib" Version="2021.4.0-0419-g7f7c4a6cb1" />
+<Document xmlns:p="property" Id="T1UPiXPzIj8Mkww2Dcp65y" LanguageVersion="2021.4.10.1043" Version="0.128">
+  <NugetDependency Id="CMZoMp3KcUENACJFjwGuNU" Location="VL.CoreLib" Version="2021.4.10" />
   <Patch Id="RxHJ1CguIhfNnulujIp4VW">
     <Canvas Id="RgbJq7DRb8HMnkn9Bg2GDO" DefaultCategory="Main" BordersChecked="false" CanvasType="FullCategory" />
     <!--
@@ -23,7 +23,9 @@
             <Pin Id="U4HjxmLmg7CLhjFfYdhghW" Name="Instance" Kind="InputPin" />
             <Pin Id="Kbj24S3nRpiQcsm0e7lJE0" Name="Access Token" Kind="InputPin" />
             <Pin Id="PL7SsiTzYz2LnBjXBlyaSA" Name="Output" Kind="OutputPin" />
-            <Pin Id="RjkFkphAeFlL9wxfmPu40e" Name="Is Connected" Kind="OutputPin" />
+            <Pin Id="BjqXAXrAHHnLj5lrrp38qu" Name="Valid" Kind="OutputPin" />
+            <Pin Id="KoBQ9V5K7OTMYU7HvC3Bt1" Name="Error Message" Kind="OutputPin" />
+            <Pin Id="QIG2dlnHVAhPcMfYV8Lrxy" Name="On Data" Kind="OutputPin" />
           </Node>
           <Pad Id="RlmaNIUlKDIMI5CBCLrbG0" Comment="Instance" Bounds="98,169,35,15" ShowValueBox="true" isIOBox="true" Value="">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
@@ -71,7 +73,6 @@
               <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
             </p:ValueBoxSettings>
           </Pad>
-          <Pad Id="GAKqGgd5rldNohGePfwm7Y" Comment="Is Connected" Bounds="180,328,35,35" ShowValueBox="true" isIOBox="true" />
           <Pad Id="L73oDFytd98PPMeAV50SzI" Bounds="190,165,169,63" ShowValueBox="true" isIOBox="true" Value="&lt; in the form of e.g:&#xD;&#xA;mastodon.social&#xD;&#xA;(ie, without the http)">
             <p:TypeAnnotation>
               <Choice Kind="TypeFlag" Name="String" />
@@ -84,21 +85,15 @@
         </Canvas>
         <Patch Id="FYVRhyTK41tLX0TyO4pNj2" Name="Create" />
         <Patch Id="F87vmVwrXL5MNGKKKYNd5H" Name="Update" />
-        <!--
-
-    ************************  ************************
-
--->
         <ProcessDefinition Id="DAOoUQJ4KiTPC3k0MWYLhI">
           <Fragment Id="P5X7CRabhEiNYwUqnuuMb6" Patch="FYVRhyTK41tLX0TyO4pNj2" Enabled="true" />
           <Fragment Id="TMfIDewhhgTNmPkjorfmWr" Patch="F87vmVwrXL5MNGKKKYNd5H" Enabled="true" />
         </ProcessDefinition>
         <Link Id="IDI5avwRK75OIET2djS3os" Ids="RlmaNIUlKDIMI5CBCLrbG0,U4HjxmLmg7CLhjFfYdhghW" />
         <Link Id="Gq0Ob1G78PROMNJ62U7vHa" Ids="KhWH4TrZUUcLl7vHayFPXl,Kbj24S3nRpiQcsm0e7lJE0" />
-        <Link Id="OALBveYWCMON5CMhEpn031" Ids="RjkFkphAeFlL9wxfmPu40e,GAKqGgd5rldNohGePfwm7Y" />
       </Patch>
     </Node>
   </Patch>
-  <NugetDependency Id="TnM1EVsNdGiLx3ehebwrrX" Location="VL.CoreLib" Version="2021.4.0-0419-g7f7c4a6cb1" />
+  <NugetDependency Id="TnM1EVsNdGiLx3ehebwrrX" Location="VL.CoreLib" Version="2021.4.10" />
   <NugetDependency Id="GsnU3f9w2qRNYtLR4V7Knj" Location="VL.IO.Mastonet" Version="0.0.0.0" />
 </Document>

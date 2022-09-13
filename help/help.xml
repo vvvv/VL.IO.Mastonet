@@ -2,8 +2,10 @@
 <Pack>
 	<Topic title="Introduction">
 		<UriItem title="Explanation What is the Fediverse" link="https://en.wikipedia.org/wiki/Fediverse" mediaType="text"/>
-		<UriItem title="Explanation Join Mastodon" link="https://joinmastodon.org/" mediaType="text"/>
-		<UriItem title="Explanation Join Pixelfed" link="https://fedidb.org/software/pixelfed" mediaType="text"/>
+		<UriItem title="Explanation joinmastodon.org" link="https://joinmastodon.org/" mediaType="text"/>
+		<UriItem title="Explanation List of Mastodon servers" link="https://joinmastodon.org/" mediaType="text"/>
+		<UriItem title="Explanation pixelfed.org" link="https://pixelfed.org" mediaType="text"/>
+		<UriItem title="Explanation List of Pixelfed servers" link="https://fedidb.org/software/pixelfed" mediaType="text"/>
 		<VLDocument link="HowTo Get an access token.vl" tags="mastodon pixelfed"/>
 	</Topic>
 	<Topic title="Getting started">
