@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Document xmlns:p="property" Id="MeEoMHsaq8IMNzGWjB8Q99" LanguageVersion="2021.4.6.798" Version="0.128">
+<Document xmlns:p="property" Id="MeEoMHsaq8IMNzGWjB8Q99" LanguageVersion="2021.4.10.1043" Version="0.128">
   <Patch Id="AqQcV8Vh5WHMxZzJPG6il3">
     <Canvas Id="UVYcNwVxlXdNfuQcd45kZR" DefaultCategory="IO.MastodonAPI" CanvasType="FullCategory">
       <!--
@@ -4152,11 +4152,11 @@
       </Patch>
     </Node>
   </Patch>
-  <NugetDependency Id="IwDckeiuTY5M93ojI2gd9c" Location="VL.CoreLib" Version="2021.4.6-0783-g6937038077" />
+  <NugetDependency Id="IwDckeiuTY5M93ojI2gd9c" Location="VL.CoreLib" Version="2021.4.10" />
   <PlatformDependency Id="IxKJkmkugAxLxXJrAfhMD6" Location="System.Windows.Forms" />
   <PlatformDependency Id="D8aK4sgwn4gPwyx2EGUY6N" Location="System.Drawing" />
-  <NugetDependency Id="QpRdgq4VgfpPPVybJWQgju" Location="VL.Skia" Version="2021.4.6-0783-g6937038077" />
+  <NugetDependency Id="QpRdgq4VgfpPPVybJWQgju" Location="VL.Skia" Version="2021.4.10" />
   <PlatformDependency Id="SmxxndIq8WsOxLRqkye2KH" Location="System.IO" />
   <PlatformDependency Id="L1mjzRuooo7Ld2WE8qr69y" Location="System.Net.Http" />
-  <NugetDependency Id="AEwGRI37HNsM2lifUBZMtp" Location="Mastonet" Version="1.8.2" />
+  <NugetDependency Id="UVde7hEi3nqOynnSz0UhNW" Location="Mastonet" Version="1.9.0" />
 </Document>

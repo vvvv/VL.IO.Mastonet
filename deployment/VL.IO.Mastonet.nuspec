@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/10/nuspec.xsd">
   <metadata>
     <id>VL.IO.Mastonet</id>
-    <version>0.0.8-alpha</version>
+    <version>0.1.0-alpha</version>
     <title>VL.IO.Mastonet</title>
     <authors>vvvv</authors>
     <owners>vvvv</owners>
@@ -12,7 +12,7 @@
     <description>Support for the Mastodon API</description>
     <tags>VL, fediverse, mastodon, toot, pixelfed, socialmedia</tags>
 	<dependencies>
-      <dependency id="Mastonet" version="1.8.2" />
+      <dependency id="Mastonet" version="1.9.0" />
     </dependencies>
 	<icon>icon\nugeticon.png</icon>
   </metadata>
