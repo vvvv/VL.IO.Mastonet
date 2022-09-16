@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Document xmlns:p="property" Id="RfVI3mZdiMvQUhgjcNm8lp" LanguageVersion="2021.4.6.798" Version="0.128">
+<Document xmlns:p="property" Id="RfVI3mZdiMvQUhgjcNm8lp" LanguageVersion="2021.4.10.1043" Version="0.128">
   <Patch Id="NHg5NVa32adL18Mo9Az8ZW">
     <Canvas Id="MGL9rOTfYRMMapym9ZgI5D" DefaultCategory="Main" CanvasType="FullCategory" />
     <!--
@@ -31,19 +31,20 @@
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
           </Pad>
-          <Node Bounds="156,391,45,19" Id="Rhx4yADvEUvL7S1G6ucYaG">
+          <Node Bounds="156,556,85,19" Id="Rhx4yADvEUvL7S1G6ucYaG">
             <p:NodeReference LastCategoryFullName="IO.Mastodon" LastSymbolSource="VL.IO.Mastodon.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="ProcessAppFlag" Name="Toot" />
             </p:NodeReference>
             <Pin Id="SyHrvO0HiZkMm4MWGmfqcE" Name="Input" Kind="InputPin" />
             <Pin Id="OQhYxZjD0VrLu1sPv4uupV" Name="Text" Kind="InputPin" />
-            <Pin Id="CiTaEAE57xJQOiG8y13gvn" Name="Sensitive" Kind="InputPin" />
             <Pin Id="VJLx48QuVSLOp3Pjbb8Ehy" Name="Spoiler Text" Kind="InputPin" />
+            <Pin Id="CiTaEAE57xJQOiG8y13gvn" Name="Sensitive" Kind="InputPin" />
+            <Pin Id="GDWHJGzdKHqOS7H55W6CLl" Name="Visibility" Kind="InputPin" />
             <Pin Id="B1vEBmKp0ryMJCoLgCMAEk" Name="Send" Kind="InputPin" />
             <Pin Id="GwX5NCkTSsqNRj4oK7ZqwE" Name="On Succeeded" Kind="OutputPin" />
           </Node>
-          <Pad Id="D58PyQO6xjBM5OcuyfmVSD" Comment="Send" Bounds="343,346,35,35" ShowValueBox="true" isIOBox="true" Value="False">
+          <Pad Id="D58PyQO6xjBM5OcuyfmVSD" Comment="Send" Bounds="258,515,35,35" ShowValueBox="true" isIOBox="true" Value="False">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
               <Choice Kind="TypeFlag" Name="Boolean" />
             </p:TypeAnnotation>
@@ -56,13 +57,32 @@
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
           </Pad>
-          <Pad Id="U9xpqxVhqrRMpQzcHte4J0" Comment="On Succeeded" Bounds="158,440,35,35" ShowValueBox="true" isIOBox="true" />
+          <Pad Id="U9xpqxVhqrRMpQzcHte4J0" Comment="On Succeeded" Bounds="158,605,35,35" ShowValueBox="true" isIOBox="true" />
           <Pad Id="H0OwJKMY0auLKiCDuuHlw0" Comment="Access Token" Bounds="240,208,35,15" ShowValueBox="true" isIOBox="true" Value="">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
           </Pad>
           <Pad Id="SFMzLtelqVtMLCXByIrSjk" Comment="Valid" Bounds="185,278,35,35" ShowValueBox="true" isIOBox="true" />
+          <Pad Id="H2yWN7CCWpRM6ssxCQaDpe" Comment="Sensitive" Bounds="218,413,35,35" ShowValueBox="true" isIOBox="true" Value="False">
+            <p:TypeAnnotation>
+              <Choice Kind="ImmutableTypeFlag" Name="Boolean" />
+              <FullNameCategoryReference ID="Primitive" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:buttonmode p:Assembly="VL.UI.Forms" p:Type="VL.HDE.PatchEditor.Editors.ButtonModeEnum">Toggle</p:buttonmode>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="IXjchTxbHASOa3d4qaajph" Comment="Spoiler Text" Bounds="198,384,35,15" ShowValueBox="true" isIOBox="true" Value="">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+          </Pad>
+          <Pad Id="P7LCc1PYDbpNPwVX4RSZTL" Comment="Visibility" Bounds="238,466,65,15" ShowValueBox="true" isIOBox="true" Value="Public">
+            <p:TypeAnnotation LastCategoryFullName="Mastonet" LastSymbolSource="Mastonet.dll">
+              <Choice Kind="TypeFlag" Name="Visibility" />
+            </p:TypeAnnotation>
+          </Pad>
         </Canvas>
         <Patch Id="UJ1h48jP9r0M4dQFQ6bJG4" Name="Create" />
         <Patch Id="Syis1a2IIQtNp3QD5SKEOf" Name="Update" />
@@ -77,11 +97,14 @@
         <Link Id="Co8w803p0keOnnpOPLI6eQ" Ids="ELVFWZhPyAPQFVagwWlroL,SyHrvO0HiZkMm4MWGmfqcE" />
         <Link Id="J8Bp1HOOCgpO9TuOwLUSMb" Ids="H0OwJKMY0auLKiCDuuHlw0,RJyTGuFJt2xNFOTA1Rl4gi" />
         <Link Id="NqokYgG5EwEQRmJiYSapKl" Ids="QB5A4wlCI9gOxcKqQoL8on,SFMzLtelqVtMLCXByIrSjk" />
+        <Link Id="HMs3fPo5IdDOOYEeCe4UJp" Ids="H2yWN7CCWpRM6ssxCQaDpe,CiTaEAE57xJQOiG8y13gvn" />
+        <Link Id="NoxWtrtkZqtNAQavKvBfZe" Ids="IXjchTxbHASOa3d4qaajph,VJLx48QuVSLOp3Pjbb8Ehy" />
+        <Link Id="MRrO8gMCjAPOzhf2pfH4QB" Ids="P7LCc1PYDbpNPwVX4RSZTL,GDWHJGzdKHqOS7H55W6CLl" />
       </Patch>
     </Node>
   </Patch>
-  <NugetDependency Id="ReKkiaX6YtgPDaZ6uNFni3" Location="VL.CoreLib" Version="2021.4.6-0783-g6937038077" />
-  <NugetDependency Id="LHoNEkwRutuPiRuNifanIW" Location="VL.Skia" Version="2021.4.6-0783-g6937038077" />
-  <NugetDependency Id="G9f67P4SeUlLZAfvly6XH1" Location="VL.IO.OSC_Obsolete" Version="2021.4.6-0783-g6937038077" />
+  <NugetDependency Id="ReKkiaX6YtgPDaZ6uNFni3" Location="VL.CoreLib" Version="2021.4.10" />
+  <NugetDependency Id="LHoNEkwRutuPiRuNifanIW" Location="VL.Skia" Version="2021.4.10" />
+  <NugetDependency Id="G9f67P4SeUlLZAfvly6XH1" Location="VL.IO.OSC_Obsolete" Version="2021.4.10" />
   <NugetDependency Id="GOfyXQaCDo4OZlZUhmxEA2" Location="VL.IO.Mastonet" Version="0.0.0.0" />
 </Document>
