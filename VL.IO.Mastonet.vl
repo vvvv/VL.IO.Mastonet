@@ -4223,5 +4223,5 @@
   <NugetDependency Id="QpRdgq4VgfpPPVybJWQgju" Location="VL.Skia" Version="2021.4.10" />
   <PlatformDependency Id="SmxxndIq8WsOxLRqkye2KH" Location="System.IO" />
   <PlatformDependency Id="L1mjzRuooo7Ld2WE8qr69y" Location="System.Net.Http" />
-  <NugetDependency Id="UVde7hEi3nqOynnSz0UhNW" Location="Mastonet" Version="1.8.2" />
+  <PlatformDependency Id="EQM6QazYYsVQZIjOOctQto" Location="Mastonet.dll" />
 </Document>
